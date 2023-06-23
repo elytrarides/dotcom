@@ -1,22 +1,22 @@
 import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Home from './app/Home';
+import Support from './app/Support';
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Home />
+    },
+    {
+        path: "/support",
+        element: <Support />
+    }
+])
 
 function App() {
-  return (
-    <div className="App">
-        <div id="landing">
-            <div>
-                <img 
-                alt="Demo of a rider and driver app"
-                src={`${window.location.origin}/landing.png`} />
-                <div id="text">
-                    <h1>Coming January 2024...</h1>
-                    <a href="https://forms.gle/FpnCU8gzT6UgDnJa6">Join Waitlist</a>
-                </div>
-            </div>
-        </div>
-    </div>
-  );
+    return <RouterProvider router={router} />
 }
 
 export default App;
