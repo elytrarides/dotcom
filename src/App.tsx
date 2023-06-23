@@ -7,9 +7,7 @@ function App() {
         <div id="landing">
             <div>
                 <img 
-                    style={{
-
-                    }}
+                alt="Demo of a rider and driver app"
                 src={`${window.location.origin}/landing.png`} />
                 <div id="text">
                     <h1>Coming January 2024...</h1>
