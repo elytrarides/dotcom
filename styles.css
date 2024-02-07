@@ -65,3 +65,18 @@ code {
     transform: translateX(-50%);
 }
 
+#featlist li {
+  font-size: 20px;
+  margin: 30px 0;
+}
+#dashlink {
+  display: none;
+}
+
+@media (min-width: 640px) { 
+    #dashlink {
+        display: inline;
+    }
+}
+
+
